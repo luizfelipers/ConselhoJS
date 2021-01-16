@@ -35,13 +35,13 @@ const {advice} = response.data.slip;
 
       <div className="App">
         <div className='titulo'>
-          <h1>App init</h1>
+          <h1>App Conselhos</h1>
         </div>
         
         <br></br>
         <div className='card'>
             <h2 className='heading'>{advice}</h2>
-       <button className='botao'>
+       <button className='botao' onClick={ this.fetchAdvice() }>
          Me dê conselho!</button> 
         
       </div>
